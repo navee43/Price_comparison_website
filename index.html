@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    
+    <header id="head">
+        <a href="#"><img src="./Images/website logo.png" alt=""></a>
+
+        <div class="navbar" id="navbar">
+            
+            <ul class="nav-li">
+                <li><a  href="./index.html">home</a></li>
+                <li><a href="#" onclick="focusSearchBar()">compare</a></li>
+    
+                <li><a href="#">about</a></li>
+                <li><a href="#" >contact us</a></li>
+                <!-- <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li> -->
+            </ul>
+            <!-- <ul class="phone_bar">
+                <i class="fa-solid fa-bars"></i>
+            </ul> -->
+
+        </div> 
+       
+            <i class="fa-solid fa-bars" id="phone_bar"></i>
+
+       
+    
+
+    </header>
+
+
+
+    
+
+
+    <section class="hero">
+       
+        <div class="video_container">
+           
+            <video class="video_land" loop autoplay muted>
+                <source src="./LandingPageVideo/landing page.mp4" type="video/mp4">
+            </video>
+            <img src="./Images/search.png " alt="" id="search_img" onclick="fetchShoppingData()">
+      
+
+         <input type="search" placeholder="Enter Your Product" class="search" >
+            <h2 id="text">QUICK COMPARE</h2> <!-- Move the text outside the video tag -->
+            
+
+        </div>
+    </section>
+    
+
+    <section class="banner-1">
+        <h1>Check Out Some Brand New stuff</h1>
+        <h2> <span>CRAZY DEALS </span>- Upto 20% OFF On Products </h2>
+    </section>
+
+
+
+    <section class="section3">
+        <div class="boxes">
+            
+            <div class="box b11">
+                <a href="https://www.flipkart.com/asus-tuf-gaming-f17-ai-powered-intel-core-i5-11th-gen-11400h-16-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-2050-70-w-fx706hf-ny040w-laptop/p/itm5b135cad5c8a9?pid=COMHY74JXH3KZRWM&lid=LSTCOMHY74JXH3KZRWMLLMJRL&marketplace=FLIPKART&q=laptops&store=6bo%2Fb5g&srno=s_2_29&otracker=search&otracker1=search&fm=Search&iid=d1bc5eb0-03d2-46ac-8361-a7df91f7f356.COMHY74JXH3KZRWM.SEARCH&ppt=sp&ppn=sp&qH=c06ea84a1e3dc3c6" target="_blank"><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/a/k/e/fx706hf-ny040w-gaming-laptop-asus-original-imah43cfatfc5eku.jpeg?q=70" alt=""></a>
+                
+                <div class="card-text">
+                <!-- <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p>3.8</p>
+                   </div> -->
+
+                <h3>Acer Aspire LIte 12th Gen </h3>
+                 <p>&#8377 59,990</p>
+
+                 <div class="amazon_logo">
+                    <img src="./Images/flipkart logo.webp" alt="">
+                 <img src="./Images/amzon logo.webp" alt="">
+                </div>
+
+
+               </div>
+            </div>
+
+            <div class="box b22">
+                <a href="https://www.flipkart.com/lenovo-ideapad-slim-5-qualcomm-snapdragon-x-plus-16-gb-1-tb-ssd-windows-11-home-14q8x9-thin-light-laptop/p/itm8a59041fc8c0f?pid=COMH4N9CZ7JKPQQC&lid=LSTCOMH4N9CZ7JKPQQCOFLXDU&marketplace=FLIPKART&q=laptops&store=6bo%2Fb5g&srno=s_1_18&otracker=search&otracker1=search&fm=organic&iid=en_jIRFsuk0RANIOkZF6otN-pNDRsgZ02mIZ49gbMrPMImKM58lBgpFRo9QXAlOpicnIY7vyvsKMFZNz_CeZjZ1olF91k_NKRtsN7mkYTl-6AQ%3D&ppt=hp&ppn=homepage&ssid=a8ggv65bps0000001727685874697&qH=c06ea84a1e3dc3c6" target="_blank"><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/w/l/m/-original-imah5f4ktgr9dxrc.jpeg?q=70" alt=""></a>
+                <div class="card-text">
+                <!-- <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p>3.8</p>
+                   </div> -->
+
+                <h3>Lenovo IdeaPad Slim 5</h3>
+                 <p>&#8377 61,390</p>
+
+                 <div class="amazon_logo">
+                    <img src="./Images/flipkart logo.webp" alt="">
+                 <img src="./Images/amzon logo.webp" alt="">
+                </div>
+               </div>
+            </div>
+
+
+            <div class="box b33">
+                <!-- <a href="https://www.flipkart.com/acer-swift-go-14-evo-oled-intel-core-i5-13th-gen-13500h-16-gb-512-gb-ssd-windows-11-home-sfg14-71-58ub-thin-light-laptop/p/itm0a080194d6dd1?pid=COMGZKGGAHZBA3WY&lid=LSTCOMGZKGGAHZBA3WYWOBYJC&marketplace=FLIPKART&q=laptops&store=6bo%2Fb5g&spotlightTagId=BestsellerId_6bo%2Fb5g&srno=s_1_15&otracker=search&otracker1=search&fm=Search&iid=6c23a550-9d0d-42fd-9c57-d465d1796096.COMGZKGGAHZBA3WY.SEARCH&ppt=sp&ppn=sp&qH=c06ea84a1e3dc3c6"></a> -->
+                <a href="https://www.flipkart.com/acer-swift-go-14-evo-oled-intel-core-i5-13th-gen-13500h-16-gb-512-gb-ssd-windows-11-home-sfg14-71-58ub-thin-light-laptop/p/itm0a080194d6dd1?pid=COMGZKGGAHZBA3WY&lid=LSTCOMGZKGGAHZBA3WYWOBYJC&marketplace=FLIPKART&q=laptops&store=6bo%2Fb5g&spotlightTagId=BestsellerId_6bo%2Fb5g&srno=s_1_15&otracker=search&otracker1=search&fm=Search&iid=6c23a550-9d0d-42fd-9c57-d465d1796096.COMGZKGGAHZBA3WY.SEARCH&ppt=sp&ppn=sp&qH=c06ea84a1e3dc3c6" target="_blank"><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/9/3/4/sfg14-71-58ub-thin-and-light-laptop-acer-original-imah3pzsgqcyfyhp.jpeg?q=70" alt=""></a>
+
+                <div class="card-text">
+                <!-- <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p>3.8</p>
+                   </div> -->
+
+                <h3>Acer Swift Go 14 </h3>
+                 <p>&#8377 82,999</p>
+
+                 <div class="amazon_logo">
+                    <img src="./Images/flipkart logo.webp" alt="">
+                 <img src="./Images/amzon logo.webp" alt="">
+                </div>
+               </div>
+            </div>
+
+
+
+
+            <div class="box b44">
+                <a href="https://www.flipkart.com/asus-vivobook-15-intel-core-i5-12th-gen-1235u-8-gb-512-gb-ssd-windows-11-home-x1504za-nj521ws-x1504za-nj520ws-x1504za-nj528ws-thin-light-laptop/p/itmff0e170cb596e?pid=COMHYWSWMFQQBCG3&lid=LSTCOMHYWSWMFQQBCG3ZA9JEY&marketplace=FLIPKART&q=laptops&store=6bo%2Fb5g&srno=s_1_24&otracker=search&otracker1=search&fm=organic&iid=6c23a550-9d0d-42fd-9c57-d465d1796096.COMHYWSWMFQQBCG3.SEARCH&ppt=hp&ppn=homepage&ssid=a8ggv65bps0000001727685874697&qH=c06ea84a1e3dc3c6" target="_blank"> <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/3/2/s/-original-imah2ger8qjev3sj.jpeg?q=70" alt=""></a>
+               
+                <div class="card-text">
+                <!-- <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p>3.8</p>
+                   </div> -->
+
+                <h3>Asus VivoBook 15 </h3>
+                 <p>&#8377 71,190</p>
+
+                 <div class="amazon_logo">
+                    <img src="./Images/flipkart logo.webp" alt="">
+                 <img src="./Images/amzon logo.webp" alt="">
+                </div>
+               </div>
+            </div>
+
+
+
+
+            <div class="box b55">
+                <a href="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/a/k/e/fx706hf-ny040w-gaming-laptop-asus-original-imah43cfatfc5eku.jpeg?q=70" target="_blank"><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/l/l/-original-imagtc5fz9spysyk.jpeg?q=70" alt=""></a>
+                <!-- <img src="https://m.media-amazon.com/images/I/517m2WrmJxL.AC_UY436_FMwebp_QL65.jpg" alt=""> -->
+                <div class="card-text">
+                <!-- <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p>3.8</p>
+                   </div> -->
+
+                <h3>Iphone 15(blue) </h3>
+                 <p>&#8377 56249</p>
+
+                 <div class="amazon_logo">
+                    <img src="./Images/flipkart logo.webp" alt="">
+                 <img src="./Images/amzon logo.webp" alt="">
+                </div>
+               </div>
+            </div>
+
+
+
+
+            <div class="box b66">
+                <a href="https://www.flipkart.com/iqoo-z7-pro-5g-blue-lagoon-256-gb/p/itm5f318d2e3e6d3?pid=MOBHFTYMZ3NR7JHP&lid=LSTMOBHFTYMZ3NR7JHPGXC26F&marketplace=FLIPKART&q=iqoo&store=tyy%2F4io&srno=s_1_20&otracker=search&otracker1=search&fm=Search&iid=b3217c4b-1e75-4837-a4cf-2569ebc892cd.MOBHFTYMZ3NR7JHP.SEARCH&ppt=sp&ppn=sp&ssid=pxbnok1t4w0000001727687015247&qH=1cc40088ec90b2d2" target="_blank"><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/r/u/l/z7-pro-5g-5665163-iqoo-original-imah2fwq6pgmt4hr.jpeg?q=70" alt=""></a>
+                <div class="card-text">
+                <!-- <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p>3.8</p>
+                   </div> -->
+
+                <h3>IQOO Z7 Pro 5G </h3>
+                 <p>&#8377 21999</p>
+
+                 <div class="amazon_logo">
+                    <img src="./Images/flipkart logo.webp" alt="">
+                 <img src="./Images/amzon logo.webp" alt="">
+                </div>
+               </div>
+            </div>
+
+
+            <div class="box b77">
+                <a href="https://www.flipkart.com/google-pixel-9-pro-xl-obsidian-512-gb/p/itm868968d53f326?pid=MOBH2HJGSBRCHHYG&lid=LSTMOBH2HJGSBRCHHYGJNCSVO&marketplace=FLIPKART&q=samsung+s24&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=en_XWFyLE0U4PhfsM6EE_4-w-MaZv62XmIBRqSC1ELMfVzxEu3VI3LH2dFa735mfZf7tSP94Tf5Ppuvsc3YcQkgHPUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=sp&ppn=sp&ssid=4c9ywhik5s0000001727686806498&qH=d5d05f693bde4793" target="_blank"><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/t/s/1/pixel-9-pro-xl-ga05983-in-google-original-imah3pfhxgd3qtqd.jpeg?q=70" alt=""></a>
+                <!-- <img src="https://m.media-amazon.com/images/I/517m2WrmJxL.AC_UY436_FMwebp_QL65.jpg" alt=""> -->
+                <div class="card-text">
+                <!-- <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p>3.8</p>
+                   </div> -->
+
+                <h3>Google Pixel 9 Pro XL </h3>
+                 <p>&#8377 1,39,999</p>
+
+                 <div class="amazon_logo">
+                    <img src="./Images/flipkart logo.webp" alt="">
+                 <img src="./Images/amzon logo.webp" alt="">
+                </div>
+               </div>
+            </div>
+
+            <div class="box b88">
+                <a href="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/t/s/1/pixel-9-pro-xl-ga05983-in-google-original-imah3pfhxgd3qtqd.jpeg?q=70" target="_blank"><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/5/i/7/-original-imahfu766ybd5h4z.jpeg?q=70" alt=""></a>
+                <!-- <img src="https://m.media-amazon.com/images/I/517m2WrmJxL.AC_UY436_FMwebp_QL65.jpg" alt=""> -->
+                <div class="card-text">
+                <!-- <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p>3.8</p>
+                   </div> -->
+
+                <h3>SAMSUNG Galaxy S24</h3>
+                 <p>&#8377 1,21,999</p>
+
+                 <div class="amazon_logo">
+                    <img src="./Images/flipkart logo.webp" alt="">
+                 <img src="./Images/amzon logo.webp" alt="">
+                </div>
+
+
+               </div>
+            </div>
+        </div>
+    </section >
+
+
+
+    <section class="logos">
+
+       <div class="logos-slide">
+
+        <span><a href="https://www.flipkart.com/fire-boltt-brillia-51-3mm-2-02-inch-largest-amoled-display-bluetooth-calling-ai-assistant-smartwatch/p/itm306790dfedcd4?pid=SMWH3Z2TGG7E4VBG"  target="_blank"><img src="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/26a2893e705a44bc.jpeg?q=20" alt=""></a></span>
+        <span><a href="https://www.flipkart.com/bags-wallets-belts/luggage-travel/suitcases/~cs-xt03i9k5xc/pr?sid=reh%2Cplk%2Ctvv&p%5B%5D=facets.brand%255B%255D%3DSAFARI"  target="_blank">            <img src="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/d8abe11c807c8dc4.jpeg?q=20" alt=""></a></span>
+        <span><a href="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/ff786cc56ef22981.jpeg?q=20" target="_blank"><img src="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/ff786cc56ef22981.jpeg?q=20" alt=""></a></span>
+        <span><a href="https://www.flipkart.com/all/~cs-9f1a3aca830de2b2595cd45df54aef68/pr?sid=clo,cfv,itg,tys&marketplace=FLIPKART&restrictLocale=true" target="_blank">      <img src="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/7f0b5a5a234df6de.jpeg?q=20" alt=""></a></span>
+       
+       
+
+        <span><a href="https://www.flipkart.com/bags-wallets-belts/luggage-travel/suitcases/~cs-xt03i9k5xc/pr?sid=reh%2Cplk%2Ctvv&p%5B%5D=facets.brand%255B%255D%3DSKYBAGS"  target="_blank">           <img src="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/f240ad53b515a8bc.jpeg?q=20" alt=""></a></span>
+        <span><a href="https://www.flipkart.com/j9e/~cs-db381ilwm6/pr?sid=j9e&collection-tab-name=ECOVACS+Water+Purifiers&pageCriteria=default"  target="_blank"><img src="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/330e3aeccdd6f181.jpeg?q=20" alt=""></a></span>
+        <span><a href="https://www.flipkart.com/6bo/b5g/~cs-ixz4hu353f/pr?sid=6bo,b5g&collection-tab-name=MSI+Cyborg+BBD&pageCriteria=BlueAndMall&ocmpid=MSI_Cyborg_BBD" target="_blank"><img src="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/0f01c32f4664c0a5.jpeg?q=20" alt=""></a></span>
+        <span><a href="https://www.flipkart.com/mens-footwear/pr?sid=osp%2Ccil&p%5B%5D=facets.discount_range_v1%255B%255D%3D60%2525%2Bor%2Bmore&p%5B%5D=facets.brand%255B%255D%3DADIDAS"   target="_blank"> <img src="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/7219301df601549d.jpeg?q=20" alt=""></a></span>
+    </div>
+
+    <div class="logos-slide">
+        
+        <span><a href="https://www.flipkart.com/fire-boltt-brillia-51-3mm-2-02-inch-largest-amoled-display-bluetooth-calling-ai-assistant-smartwatch/p/itm306790dfedcd4?pid=SMWH3Z2TGG7E4VBG"  target="_blank"><img src="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/26a2893e705a44bc.jpeg?q=20" alt=""></a></span>
+        <span><a href="https://www.flipkart.com/bags-wallets-belts/luggage-travel/suitcases/~cs-xt03i9k5xc/pr?sid=reh%2Cplk%2Ctvv&p%5B%5D=facets.brand%255B%255D%3DSAFARI"  target="_blank">            <img src="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/d8abe11c807c8dc4.jpeg?q=20" alt=""></a></span>
+        <span><a href="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/ff786cc56ef22981.jpeg?q=20" target="_blank"><img src="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/ff786cc56ef22981.jpeg?q=20" alt=""></a></span>
+        <span><a href="https://www.flipkart.com/all/~cs-9f1a3aca830de2b2595cd45df54aef68/pr?sid=clo,cfv,itg,tys&marketplace=FLIPKART&restrictLocale=true" target="_blank">      <img src="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/7f0b5a5a234df6de.jpeg?q=20" alt=""></a></span>
+       
+       
+
+        <span><a href="https://www.flipkart.com/bags-wallets-belts/luggage-travel/suitcases/~cs-xt03i9k5xc/pr?sid=reh%2Cplk%2Ctvv&p%5B%5D=facets.brand%255B%255D%3DSKYBAGS"  target="_blank">           <img src="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/f240ad53b515a8bc.jpeg?q=20" alt=""></a></span>
+        <span><a href="https://www.flipkart.com/j9e/~cs-db381ilwm6/pr?sid=j9e&collection-tab-name=ECOVACS+Water+Purifiers&pageCriteria=default"  target="_blank"><img src="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/330e3aeccdd6f181.jpeg?q=20" alt=""></a></span>
+        <span><a href="https://www.flipkart.com/6bo/b5g/~cs-ixz4hu353f/pr?sid=6bo,b5g&collection-tab-name=MSI+Cyborg+BBD&pageCriteria=BlueAndMall&ocmpid=MSI_Cyborg_BBD" target="_blank"><img src="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/0f01c32f4664c0a5.jpeg?q=20" alt=""></a></span>
+        <span><a href="https://www.flipkart.com/mens-footwear/pr?sid=osp%2Ccil&p%5B%5D=facets.discount_range_v1%255B%255D%3D60%2525%2Bor%2Bmore&p%5B%5D=facets.brand%255B%255D%3DADIDAS"   target="_blank"> <img src="https://rukminim2.flixcart.com/fk-p-flap/450/280/image/7219301df601549d.jpeg?q=20" alt=""></a></span>
+    </div>
+    </div>
+       
+         
+
+
+              
+
+    </section>
+
+
+    <section class="section-5">
+
+
+
+        <div class="products">
+
+
+
+            <div class="product_box b-1"  >
+               <a href="https://www.flipkart.com/jhg/~cs-7713b98szi/pr?sid=jhg&collection-tab-name=Ceiling+Lamp&pageCriteria=default&p%5B%5D=facets.discount_range_v1%255B%255D%3D50%2525%2Bor%2Bmore&hpid=YVqioroXVd-qqKZP02Hr1qp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJNaW4uIDUwJSBPZmYiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJDSUxGTUFQWUNVQUtZSkhYIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiQ2VpbGluZyBMYW1wIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D&fm=neo%2Fmerchandising&iid=M_53a9a490-9de8-4a03-8de2-f73e69dc99da_1.60SM9IS1IBUF&ppt=browse&ppn=browse&ssid=3dv3z9prkw0000001727603280651&otracker=dynamic_omu_infinite_Home%2Band%2BKitchen%2BEssentials_2_1.dealCard.OMU_INFINITE_60SM9IS1IBUF&cid=60SM9IS1IBUF"><img src="https://rukminim2.flixcart.com/image/400/400/xif0q/ceiling-lamp/z/z/y/4-1-40-40-1-7-adw-400mm-black-goldg-adwait-original-imagubjgnyyfjmfy.jpeg?q=70" alt=""></a> 
+               <h3>Ceiling Lamp</h3>
+               <h5>Starting From  &#8377 350</h5>
+            </div>
+
+
+            <div class="product_box b-2"  >
+                <a href="https://www.flipkart.com/home-furnishing/bed-linen-blankets/bedsheets/pr?sid=jra%2Cknw%2Cqcw&p%5B%5D=facets.price_range.from%3D299&p%5B%5D=facets.price_range.to%3DMax&hpid=pwqFzDQMipv0ELGw_30_Gqp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTI5OSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6IkJEU0c1SjZWR0hTRDlYVVoiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJCZWRzaGVldHMiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19&fm=neo%2Fmerchandising&iid=M_53a9a490-9de8-4a03-8de2-f73e69dc99da_1.EBU74INYLUD8&ppt=browse&ppn=browse&ssid=3dv3z9prkw0000001727603280651&otracker=dynamic_omu_infinite_Home%2Band%2BKitchen%2BEssentials_5_1.dealCard.OMU_INFINITE_EBU74INYLUD8&cid=EBU74INYLUD8"><img src="https://rukminim2.flixcart.com/image/400/400/l3nco7k0/bedsheet/t/o/a/la-dancing-pupet-gren-1-la-dancing-pupet-gren-flat-la-verne-original-imagepwgh2exnkmp.jpeg?q=70" alt=""></a>
+                <h3>Bed Sheets</h3>
+               <h5>20% Off</h5>
+             </div>
+
+
+             <div class="product_box b-3"  >
+                <a href=""><img src="./Images/f1.jpg" alt=""></a>
+                <h3>Men's Wear</h3>
+                <h5>New Arrivals</h5>
+             </div>
+
+            
+
+             
+
+
+             <div class="product_box b-4" >
+               <a href="https://www.flipkart.com/computers/monitors/pr?sid=6bo%2C9no&fm=neo%2Fmerchandising&iid=M_ce1a6f68-d7d2-4ae1-875c-0d0877d9a11f_2_372UD5BXDFYS_MC.ECL5SFI77NSY&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_3_L2_view-all&cid=ECL5SFI77NSY&p%5B%5D=facets.fulfilled_by%255B%255D%3DFlipkart%2BAssured&p%5B%5D=facets.brand%255B%255D%3DViewSonic&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTgwMDAiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJWaWV3U29uaWMgTW9uaXRvcnMiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19&fm=neo%2Fmerchandising&iid=e7a6fbce-e6c3-4101-90d2-661643be6988.NOBMPKW1HQ7A&ppt=dynamic&ppn=dynamic&ssid=ts02syphsg0000001727603842030&otracker=dynamic_omu_Best%252Bof%252BElectronics_16_From%2B%25E2%2582%25B98000_NOBMPKW1HQ7A&cid=NOBMPKW1HQ7A"><img src="https://rukminim2.flixcart.com/image/400/400/xif0q/monitor/a/2/r/-original-imah45nfjdxg2mz2.jpeg?q=70" alt=""></a>
+               <h3>Led's</h3>
+               <h5>Sale Going On </h5>
+             <h1></h1>
+
+             </div>
+
+             <div class="product_box b-5"  >    
+                <a href="https://www.flipkart.com/tyy/4io/~cs-lpfardm3bi/pr?sid=tyy%2C4io&collection-tab-name=Samsung+Galaxy+S23+FE+5G&pageCriteria=BlueAndMall&param=8765&hpid=b-5zCwim89Zdn48FsA4jUap7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJQcmljIExvY2sgQW1vdW50IOKCuTk5OSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6Ik1PQkdWVEEyODM2RFFXVFQiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJTYW1zdW5nIFMyMyBGRSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D&fm=neo%2Fmerchandising&iid=M_4bd4ce1e-5e36-4928-8be6-f68c9d1048ff_1.G5V0VVRNAMLX&ppt=hp&ppn=homepage&ssid=cp09hirtvk0000001727603991598&otracker=dynamic_omu_infinite_Deals%2BOn%2BSmartphones_6_1.dealCard.OMU_INFINITE_G5V0VVRNAMLX&cid=G5V0VVRNAMLX"><img src="https://rukminim2.flixcart.com/image/400/400/xif0q/mobile/b/o/j/-original-imagztn8vv8htmyx.jpeg?q=70" alt=""></a>
+                <h3>Samsung Galaxy</h3>
+               <h5>31% discoun</h5>
+             </div>
+
+             <div class="product_box b-6" >
+                <a href="https://www.amazon.in/Aquaguard-purification-municipal-Eureka-Forbes/dp/B09YLWT89W/?encoding=UTF8&pd_rd_w=Nm6Ew&content-id=amzn1.sym.9884f885-6706-438d-96d3-3b50f5ea0d0d&pf_rd_p=9884f885-6706-438d-96d3-3b50f5ea0d0d&pf_rd_r=ELUSDQUSKF9NEZZAXZ8I&pd_rd_wg=9cu8R&pd_rd_r=a3e99a64-6ef0-46c2-9009-88978c8a255f&ref=pd_hp_d_btf_homenKitchen"><img src="https://m.media-amazon.com/images/I/51vNMv6Ua-L.AC_SY400.jpg" alt=""></a>
+                <h3>
+         Water Purifier
+                </h3>
+               <h5>Starts From  &#8377 3500</h5>
+             </div>
+
+             <div class="product_box b-7">
+                <a href="https://www.amazon.in/Ace-1600-Watt-21-Litre-Stainless-Function/dp/B07RCGTZ4M/?encoding=UTF8&pd_rd_w=Nm6Ew&content-id=amzn1.sym.9884f885-6706-438d-96d3-3b50f5ea0d0d&pf_rd_p=9884f885-6706-438d-96d3-3b50f5ea0d0d&pf_rd_r=ELUSDQUSKF9NEZZAXZ8I&pd_rd_wg=9cu8R&pd_rd_r=a3e99a64-6ef0-46c2-9009-88978c8a255f&ref=pd_hp_d_btf_homenKitchen"><img src="https://m.media-amazon.com/images/I/61B8-nfHqlL.AC_SY400.jpg" alt=""></a>
+                <h3>Vaccum Cleaner</h3>
+                <h5>Get it in &#8377 1099</h5>
+            </div> 
+
+
+                <div class="product_box b-8">
+                    <a href=""><img src="./Images/f8.jpg" alt=""></a>
+                    <h3>Women's Wear</h3>
+                    <h5>New Arrivals</h5>
+                 </div>
+
+                 <div class="product_box b-9">
+                    <a href="https://www.amazon.in/HP-15-6-inch-Backpack-Pass-Through-793A7AA/dp/B0BYDWD4VL/ref=pd_rhf_gw_s_pd_crcd_d_sccl_1_1/258-0024558-1702644?pd_rd_w=U76c1&content-id=amzn1.sym.785b16db-ca40-46a3-ae75-2b38bb48d1aa&pf_rd_p=785b16db-ca40-46a3-ae75-2b38bb48d1aa&pf_rd_r=11HF0RW022K7XFAV43WZ&pd_rd_wg=rtL3o&pd_rd_r=2f5a1a58-6725-40d0-b9c6-2abdb04b779d&pd_rd_i=B0BYDWD4VL&psc=1"><img src="https://images-eu.ssl-images-amazon.com/images/I/A1KwlpA8pTL.AC_UL330_SR330,330.jpg" alt=""></a>
+                    <h3>Women's Wear</h3>
+                    <h5>New Arrivals</h5>
+                 </div>
+    </section>
+
+    <section class="section-6">
+        <div class="section-slide">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/4cc0e5613cf42a62.png?q=20 " class="img1">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/c4755986f1d6988a.jpg?q=20" class="img2">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/4cc0e5613cf42a62.png?q=20" class="img3">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ff6cc03d8812e50f.jpg?q=20" class="img4">
+        </div>
+        <div class="section-slide">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/4cc0e5613cf42a62.png?q=20 " class="img1">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/c4755986f1d6988a.jpg?q=20" class="img2">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/4cc0e5613cf42a62.png?q=20" class="img3">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ff6cc03d8812e50f.jpg?q=20" class="img4">
+        </div>
+        <div class="section-slide">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/4cc0e5613cf42a62.png?q=20 " class="img1">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/c4755986f1d6988a.jpg?q=20" class="img2">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/4cc0e5613cf42a62.png?q=20" class="img3">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ff6cc03d8812e50f.jpg?q=20" class="img4">
+        </div>
+        <div class="section-slide">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/4cc0e5613cf42a62.png?q=20 " class="img1">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/c4755986f1d6988a.jpg?q=20" class="img2">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/4cc0e5613cf42a62.png?q=20" class="img3">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/ff6cc03d8812e50f.jpg?q=20" class="img4">
+        </div>
+    </section>
+
+
+   <section class="why_us">
+<h1>KEY FEATURES OF OUR PRICE COMPARISON WEBSITE</h1>
+    <div class="why_us_container">
+    <div class="inner_text">
+    <h4>Multi-Store Tracking</h4>
+    <p>Easily track the prices changes of products across various e-commerce stores  for smarter shopping.</p>
+</div>
+<img src="https://buyhatke.com/_app/immutable/assets/ic_multi_store.D1gUxGvc.webp" alt="">
+</div>
+   </section>
+
+
+
+
+   <section class="happy_users">
+
+
+
+    <div class="upper_text">
+        <div class="main_heading">
+
+            <img src="https://buyhatke.com/_app/immutable/assets/review-1.Dnz9IrBl.png" alt="">
+    <img src="https://buyhatke.com/_app/immutable/assets/review-2.BMJruVrz.png" alt="">
+    <img src="https://imgs.search.brave.com/QTvSYpjKXv4lO9QPvSw4kGhHb_y3PJbu86l6EOsyD5Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMucGhvdG9mZWVs/ZXIuY29tL2ltYWdl/cy9ob21lL3Rlc3Qt/Ym94LzAxLmpwZw" alt="">
+    <img src="https://buyhatke.com/_app/immutable/assets/review-5.DDcasAKE.png" alt="">
+
+    <h1 id="lakhsRat">Over 2.6 Lakh happy users</h1>
+
+        </div>
+    <h2>Rated 4.7 Stars, the Most Trusted Online Shopping Tool</h2>
+    </div>
+
+
+    <div class="rating_outer_box">
+        <div class="rating_inner_boxes">
+            <img src="https://buyhatke.com/_app/immutable/assets/review-1.Dnz9IrBl.png" alt="">
+             <div class="rating_inner_inner_boxes">
+                <p>loved the website </p>
+                <h6>Srikar</h6>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                </div></div>
+        </div>
+
+
+        <div class="rating_inner_boxes">
+            <img src="https://buyhatke.com/_app/immutable/assets/review-2.BMJruVrz.png" alt="">
+             <div class="rating_inner_inner_boxes">
+                <p>Excellent UI also website  👋 Kudos to the developer, you saved me few 1000 rupees</p>
+             <h6>Ravi Kumar</h6>
+             <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+             </div>
+             </div>
+        </div>
+
+
+
+        <div class="rating_inner_boxes">
+            <img src="https://imgs.search.brave.com/QTvSYpjKXv4lO9QPvSw4kGhHb_y3PJbu86l6EOsyD5Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMucGhvdG9mZWVs/ZXIuY29tL2ltYWdl/cy9ob21lL3Rlc3Qt/Ym94LzAxLmpwZw" alt="">
+             <div class="rating_inner_inner_boxes">
+                <p>Saved me spending 700 rupees extra on Amazon</p>
+             <h6>S Jaiswal</h6>
+             <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+             </div>
+             </div>
+        </div>
+
+
+        
+    </div>
+
+    <button class="best_deal_btn" onclick="focusSearchBar()"> FIND YOUR BEST DEAL</button>
+   </section>
+
+
+
+
+   <section class="section-7">
+<div class="open_up_boxes">
+
+    
+    <button class="collapsible c1">About Price Comparison Website</button>
+<div class="inside_content">
+  <p>A price comparison website is very  helpful  that lets shoppers easily check prices on different online stores. It provides the convenience of keeping track of price changes and fluctuations for specific items of interest.</p>
+</div>
+
+<button class="collapsible c2">Benefits of Price Comparison Website</button>
+<div class="inside_content">
+  <p><strong>QUICK COMPARE </strong>Price comparison website offers various advantages, like saving your money & sticking to your budget plans. Information about the best product deals helps to make better purchase decisions and avoid unnecessary purchase of products when you do shopping.</p>
+</div>
+
+</div>
+   </section>
+
+
+   <footer class="foot">
+        
+    <div class="coloumn-1">
+       
+        <h3>contact</h3>
+        <p><b>Address: </b>
+           IIIT UNA</p>
+        <p><b>Phone:</b>(91)-7015057676</p>
+        <p><b>Hours:</b>10:00 - 18:00 ,Mon-Sat</p>
+        <h3>Follow Us</h3>
+        <div class="tags">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-github"></i>
+    </div>
+    </div>
+
+
+    <div class="about">
+      <h3>About</h3>
+      <p>About us</p>
+      <p>Delivery Information</p>
+      <p>Privacy Policy</p>
+    <p>  Terms & Conditions</p>
+    <p>contact Us</p>
+
+
+    </div>
+
+
+    <div class="my-account">
+        <h3>My Account</h3>
+        <p>sign in</p>
+        <p>view cart</p>
+        <p>my wishlist</p>
+        <p>track my order</p>
+        <p>help</p>
+    </div>
+
+
+    <div class="install_app">
+        <h3>Install App</h3>
+        <p>from app store or google play</p>
+        <img src="./pay/app.jpg" alt="">
+        <img src="./pay/play.jpg" alt="">
+        <p>secured payment gateways</p>
+        <img src="./pay/pay.png" alt="">
+    </div>
+
+    <!-- <div class="copyright">2020.Tech2 etc -HTML CSS Ecommerce Template</div> -->
+
+</footer>
+
+<div id="loading-spinner" class="loading-spinner">
+    <div class="spinner"></div>
+</div>
+
+
+
+<script src="js.js"></script>  
+
+<script>
+
+
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+    async function fetchShoppingData() {
+      
+      const query = document.querySelector('.search').value;
+
+      if (!query) {
+        console.log('Please enter a product to search for.');
+        return;
+      }
+
+      try {
+        // Fetch data from your Node.js server
+        const response = await fetch(`http://localhost:3000/api/search?q=${encodeURIComponent(query)}`);
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        localStorage.setItem("shoppingData", JSON.stringify(data));
+        // Log the data to the console (not displayed on the frontend)
+        console.log('Fetched data:', data);
+        window.location.href = "results.html";
+      } catch (error) {
+        console.error('Error fetching page data:', error);
+      }
+    }
+
+    const storedData = localStorage.getItem("shoppingData");
+if (storedData) {
+  const parsedData = JSON.parse(storedData);
+  console.log("Stored shopping data:", parsedData);
+  // You can use parsedData to display on the frontend
+}
+  
+   
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    
+    
+    *{
+        margin: 0;
+        padding: 0;     
+        box-sizing:border-box;
+    }
+
+
+    #head{
+    width: 100vw;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+     position: sticky;
+     /* z-index: 6; */
+     background-color:rgb(252, 244, 244);
+     /* background-color: beige; */
+
+    img{
+ border-radius: 5px;
+ margin: 20px;
+ width: 60px;
+ height: 60px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ -ms-border-radius: 5px;
+ -o-border-radius: 5px;
+}
+
+box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.05);
+-webkit-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.05);
+-moz-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.05);
+
+}
+
+.navbar .nav-li {
+    display: flex;
+    list-style: none;
+    /* margin-right: 65px; */
+    position: relative;
+
+    
+}
+
+.navbar .nav-li a{
+    text-transform: uppercase;
+    text-decoration: none;
+   font-size: 1.2rem;
+     color: rgb(0, 0, 0);
+     padding: 0px 50px;  
+     
+     /* text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ecf7e9, 0 0 30px #e5efe3, 0 0 40px #ebf3e9, 0 0 55px #e6e8e5, 0 0 75px #dbe6d9;
+color: #FFFFFF; */
+
+}
+
+
+
+.navbar .nav-li a:hover{
+    /* text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #fa0808, 0 0 30px #ff0606, 0 0 40px #fe0505, 0 0 55px #f10808, 0 0 75px #fb3f3f; */
+    color: #FFFFFF;
+    color: red;
+    
+}
+     body {
+        font-family: Arial, sans-serif;
+        /* padding: 20px; */
+        /* background-color: #f4f4f4; */
+        
+      }
+      
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      
+      .product-list {
+        /* margin-top: 10rem; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /* height: 1000vh; */
+        width: 100vw;
+        background-color:rgb(245, 250, 251) ; 
+         /* background-image: url("https://static.wixstatic.com/media/45d10e_66981a9a17a24738b0a34e6616de9da3~mv2_d_5740_2763_s_4_2.jpg/v1/fill/w_1960,h_1302,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/45d10e_66981a9a17a24738b0a34e6616de9da3~mv2_d_5740_2763_s_4_2.jpg");
+        background-image: url("https://static.wixstatic.com/media/45d10e_a3a66116cdfa48188a5c7abbc509a2d5~mv2.jpg/v1/fill/w_1920,h_1158,al_c,q_90,enc_auto/45d10e_a3a66116cdfa48188a5c7abbc509a2d5~mv2.jpg");
+        background-image: url("https://static.wixstatic.com/media/45d10e_8ea5dbebfc474db6bcad74e213948943~mv2_d_3593_1750_s_2.jpg/v1/fill/w_1960,h_1302,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/45d10e_8ea5dbebfc474db6bcad74e213948943~mv2_d_3593_1750_s_2.jpg");
+        background-image: url("https://static.wixstatic.com/media/84770f_44e3162df7dc4eb69d6d3f848b26416d~mv2.jpg/v1/fit/w_1720,h_688,q_90/84770f_44e3162df7dc4eb69d6d3f848b26416d~mv2.webp");
+        background-image: url("https://static.wixstatic.com/media/9c608a_7d9de449a648410da73ef0a01325f7a9.png/v1/fill/w_1920,h_1007,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/9c608a_7d9de449a648410da73ef0a01325f7a9.png");  */
+        background-repeat: repeat-y;
+        background-position: center;
+       
+      }
+      
+      .product-card {
+        /* background-color: #ac811e; */
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        
+        padding: 25px;
+        width: 290px;
+        height: 35rem;
+        text-align: center;
+        background-color: transparent;
+        backdrop-filter: blur(40px);
+       
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, .05) 0px 54px 55px, rgba(0, 0, 0, 0.05) 0px -12px 30px, rgba(0, 0, 0, 0.05) 0px 4px 6px, rgba(0, 0, 0, 0.05) 0px 12px 13px, rgba(0, 0, 0, 0.05) 0px -3px 5px;
+
+        img{
+            width: 15rem;
+            height: 15rem;
+            border-radius: 10px;
+            /* align-items: center; */
+            /* box-shadow: rgba(0, 0, 0, .05) 0px 54px 55px, rgba(0, 0, 0, 0.05) 0px -12px 30px, rgba(0, 0, 0, 0.05) 0px 4px 6px, rgba(0, 0, 0, 0.05) 0px 12px 13px, rgba(0, 0, 0, 0.05) 0px -3px 5px; */
+           transition: 1s;
+        }
+        img:hover{
+          scale: 1.09;
+        }
+      } 
+      .product-card:hover{
+        box-shadow: rgba(247, 142, 4, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+      }
+   
+      .product-card h2 {
+        font-size: 18px;
+        padding: 5px;
+        color: #333;
+      }
+      
+      .product-card p {
+        padding: 8px;
+        font-size: 14px;
+        color: #000000;
+      } 
+     .product-card a{
+      border: 1.5px solid black;
+      margin-bottom: 5px;
+        text-decoration: none;
+        /* text-transform:uppercase; */
+        padding: 3px;
+        border-radius: 9px;
+        background-color:rgb(255, 255, 220);
+        color: black;
+        text-transform: capitalize;
+        font-weight:540 ;
+        
+      }
+      a:hover{
+        color: red;
+        background-color: #f7feee;
+       
+      }
+      .sec_anc{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        margin-top: 10px;
+        color: black;
+        background-color:rgb(252, 223, 97);
+      }
+      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file for styling -->
+</head>
+<body>
+ 
+
+    <header id="head">
+        
+        <div class="navbar">
+            
+            <ul class="nav-li">
+                <li><a  href="./index.html">home</a></li>
+                <li><a href="./index.html" onclick="focusSearchBar()">compare</a></li>
+    
+                <li><a href="#">about</a></li>
+                <li><a href="#" >contact us</a></li>
+                <!-- <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li> -->
+            </ul>
+
+        </div>
+
+    </header>
+
+    
+    <!-- <h1>Product List</h1> -->
+    <div id="product-list" class="product-list"></div> <!-- Container for products -->
+    
+    <script src="results.js"></script> <!-- Your JS file -->
+</body>
+</html>
