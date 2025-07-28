@@ -406,6 +406,7 @@ color: #FFFFFF;
 
 /* Loading Spinner Styles */
 #loading-spinner {
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -434,16 +435,19 @@ color: #FFFFFF;
 
 
 .section3 .boxes{
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     transform-style: preserve-3d;
     transform: perspective(100rem);
     -webkit-transform: perspective(100rem);
     -moz-transform: perspective(100rem);
     -ms-transform: perspective(100rem);
     -o-transform: perspective(100rem);
+    margin-top:1rem;
+    
+
     cursor: pointer;
 }
 
@@ -660,7 +664,7 @@ to{
     animation-range:entry 0% cover 40%;
 }
 
-.box.b33,.b44,.b77,.b88{
+.box.b33,.b44{
     animation: rightside linear 1s;
     -webkit-animation: rightside linear 1s;
     animation-timeline:view();
@@ -722,7 +726,7 @@ to{
 
 
 
-.product_box.b-4 ,.b-5,.b-8,.b-9,.why_us_container img{
+.product_box.b-4 ,.b-5,.b-8,.why_us_container img{
     animation: rightside linear 1s;
     -webkit-animation: rightside linear 1s;
     animation-timeline:view();
