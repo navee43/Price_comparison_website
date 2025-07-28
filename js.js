@@ -1,44 +1,90 @@
+// Animate Boxes on Mouse Move
+document.addEventListener("DOMContentLoaded", function () {
+  const boxes = document.querySelectorAll('.box');
+  const productBoxes = document.querySelectorAll('.product_box');
 
-let items = document.querySelectorAll('.box');
-items.forEach(item=>{
-  item.addEventListener('mousemove',(e)=>{
-    let positionPx =e.x - item.getBoundingClientRect().left;
-    let positionX = (positionPx / item.offsetWidth)*100;
-    let positionPy = e.y - item.getBoundingClientRect().top;
-    let positionY = (positionPy / item.offsetHeight)*100;
+  function add3DRotationEffect(items) {
+    items.forEach(item => {
+      item.addEventListener('mousemove', e => {
+        const rect = item.getBoundingClientRect();
+        const x = e.x - rect.left;
+        const y = e.y - rect.top;
+        const percentX = (x / item.offsetWidth) * 100;
+        const percentY = (y / item.offsetHeight) * 100;
 
-    item.style.setProperty('--rX' ,(.5)*(50 - positionY) + 'deg');
-    item.style.setProperty('--rY' ,(.5)*(50 - positionX) + 'deg');
-  })
+        item.style.setProperty('--rX', 0.5 * (50 - percentY) + 'deg');
+        item.style.setProperty('--rY', 0.5 * (50 - percentX) + 'deg');
+      });
 
-  item.addEventListener('mouseout',()=>{
-    item.style.setProperty('--rX','0deg');
-    item.style.setProperty('--rY','0deg');
-  })
-})
+      item.addEventListener('mouseout', () => {
+        item.style.setProperty('--rX', '0deg');
+        item.style.setProperty('--rY', '0deg');
+      });
+    });
+  }
 
+  add3DRotationEffect(boxes);
+  add3DRotationEffect(productBoxes);
+});
 
+// Focus Search Bar Function
+function focusSearchBar() {
+  const searchBar = document.querySelector(".search");
+  if (searchBar) {
+    searchBar.scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => searchBar.focus(), 1000);
+  }
+}
 
-let item2 = document.querySelectorAll('.product_box');
-item2.forEach(item=>{
-  item.addEventListener('mousemove',(e)=>{
-    let positionPx =e.x - item.getBoundingClientRect().left;
-    let positionX = (positionPx / item.offsetWidth)*100;
-    let positionPy = e.y - item.getBoundingClientRect().top;
-    let positionY = (positionPy / item.offsetHeight)*100;
+// Loading Spinner Control
+window.addEventListener('load', function () {
+  const spinner = document.getElementById('loading-spinner');
+  if (spinner) spinner.style.display = 'none';
+});
 
-    item.style.setProperty('--rX' ,(.5)*(50 - positionY) + 'deg');
-    item.style.setProperty('--rY' ,(.5)*(50 - positionX) + 'deg');
-  })
+window.addEventListener('beforeunload', function () {
+  const spinner = document.getElementById('loading-spinner');
+  if (spinner) spinner.style.display = 'flex';
+});
 
-  item.addEventListener('mouseout',()=>{
-    item.style.setProperty('--rX','0deg');
-    item.style.setProperty('--rY','0deg');
-  })
-})
+// Scroll to Top Button
+document.addEventListener("DOMContentLoaded", function () {
+  const topBtn = document.getElementById("topBtn");
 
+  if (topBtn) {
+    window.addEventListener("scroll", () => {
+      topBtn.style.display = window.pageYOffset > 300 ? "block" : "none";
+    });
 
+    topBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+});
 
+// Search Input Enter Key Functionality
+document.addEventListener("DOMContentLoaded", function () {
+  const input = document.querySelector('.search');
+
+  if (input) {
+    input.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        fetchShoppingData(input.value);
+      }
+    });
+
+    // If you have a search icon that calls fetchShoppingData too
+    const searchImg = document.getElementById('search_img');
+    if (searchImg) {
+      searchImg.onclick = () => fetchShoppingData(input.value);
+    }
+  }
+});
+
+// Your search function
+// function fetchShoppingData(query) {
+//   console.log("Searching for:", query);
+//   // TODO: Add actual fetch or filter logic
+// }
 
 
 var coll = document.getElementsByClassName("collapsible");
@@ -48,83 +94,10 @@ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-      content.style.maxWidth = null;
+    if (content.style.display === "block") {
+      content.style.display = "none";
     } else {
-      content.style.maxHeight = "100px";
-      content.style.maxWidth = "68rem";
-      
-    } 
+      content.style.display = "block";
+    }
   });
 }
-
-
-
-
-
-
-
-
-
-// the hero section part 
-
-let bg = document.getElementById("bg");
-let moon = document.getElementById("moon");
-let mountain = document.getElementById("mountain");
-let road = document.getElementById("road");
-let text = document.getElementById("text");
-window.addEventListener('scroll',function(){
-    var value = window.scrollY;
-
-    bg.style.top = value*.5+'px';
-    moon.style.left = -value*.5 +'px';
-    mountain.style.top = -value*.15 +'px';
-    road.style.top = value*.15 + 'px';
-    text.style.top = value*1 + 'px';
-    
-
-})
-
-
-// focus on search bar
-
-function focusSearchBar() {
-   const searchBar = document.querySelector(".search");
-  searchBar.scrollIntoView({ behavior: 'smooth' });
-
-  // Once scrolled, wait for 0.5 seconds before focusing (to match scroll timing)
-  setTimeout(function() {
-      searchBar.focus();
-  }, 1000); // Adjust this delay based on scroll speed
-
-}
-
-
-
-
-function print(){
-  console.log("yes working");
-}
-
-
-
-
-
-
-
-
-
-
-
-// Show the loading spinner on page load
-window.addEventListener('load', function() {
-  const spinner = document.getElementById('loading-spinner');
-  spinner.style.display = 'none'; // Hide the spinner when the page is fully loaded
-});
-
-// Show the loading spinner during navigation or reload
-window.addEventListener('beforeunload', function() {
-  const spinner = document.getElementById('loading-spinner');
-  spinner.style.display = 'flex'; // Show the spinner when navigating away or reloading
-});
