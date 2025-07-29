@@ -62,11 +62,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Search Input Enter Key Functionality
 document.addEventListener("DOMContentLoaded", function () {
+ 
   const input = document.querySelector('.search');
 
   if (input) {
     input.addEventListener('keydown', function (event) {
       if (event.key === 'Enter') {
+        fetchData();
         event.preventDefault();
         fetchShoppingData(input.value);
       }
@@ -100,4 +102,20 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
   });
+}
+async function fetchData() {
+  const spinner = document.getElementById('spinner');
+  spinner.style.display = 'block'; // Show spinner
+
+  try {
+    const response = await fetch('https://your-api-endpoint.com/data');
+    const data = await response.json();
+
+    // Process the data here
+    console.log(data);
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  } finally {
+    spinner.style.display = 'none'; // Hide spinner
+  }
 }
