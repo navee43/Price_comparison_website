@@ -1246,23 +1246,7 @@ padding: 2rem 0rem;
  
 
 
-/* Responsive for smartphones */
-@media (max-width: 360px) {
-    #text {
-        font-size: 2.5rem; /* Adjusted font size for smartphones */
-    }
 
-    #moon {
-        height: 30%;
-        width: 100%;
-         /* Scale images for better display on small screens */
-    }
-
-    #mountain, #road {
-        height: 100%;
-        width: 100%; /* Scale images for better display on small screens */
-    }
-}
 
 
 
