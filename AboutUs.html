@@ -10,7 +10,7 @@
 
   <style>
     * {
-      margin: 0;
+      margin: 0;    
       padding: 0;
       box-sizing: border-box;
     }
@@ -28,7 +28,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 5px 20px;
+      text-align: center;
+      /* padding: 5px 20px; */
+      padding:0px 20px;
       background: white;
       position: fixed;
       top: 0;
@@ -36,13 +38,21 @@
       width: 100%;
       z-index: 999;
       border-bottom: 1px solid #ccc;
+     
     }
 
     .header_text {
-      font-size: 25px;
+      /* font-size: 25px;
       background: rgb(255,190,200);
-      padding: 5px 10px;
+     
       border-radius: 5px;
+      margin-top: 10px; */
+       font-size: 25px;
+        background: rgb(255,190,200) ;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 5px;
+        margin-top: 10px;
     }
 
     .navbar {
@@ -52,7 +62,7 @@
     .nav-li {
       display: flex;
       list-style: none;
-      gap: 30px;
+      gap: 60px;
     }
 
     .nav-li a {
@@ -170,7 +180,7 @@
 <body>
 
   <header id="head">
-    <h1 class="header_text">Quick Compare</h1>
+  <div> <h1 class="header_text">Quick Compare</h1></div>
     <i class="fas fa-bars" id="phone_bar" onclick="toggleMenu()"></i>
     <nav class="navbar" id="navbar">
       <ul class="nav-li" id="nav-list">
