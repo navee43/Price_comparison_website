@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar Toggle</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .header_text {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .navbar {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-li {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-li li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #phone_bar {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Mobile Styles */
+    @media screen and (max-width: 768px) {
+      .navbar {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #444;
+        padding: 1rem;
+        border-radius: 8px;
+        flex-direction: column;
+      }
+
+      .navbar.show {
+        display: flex;
+      }
+
+      .nav-li {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      #phone_bar {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="head">
+    <h1 class="header_text">Quick Compare</h1>
+
+    <div class="navbar" id="navbar">
+      <ul class="nav-li">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Compare</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <i class="fa-solid fa-bars" id="phone_bar"></i>
+  </header>
+
+  <script>
+    const menuIcon = document.getElementById("phone_bar");
+    const navMenu = document.getElementById("navbar");
+
+    menuIcon.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
+  </script>
+
+</body>
+</html>

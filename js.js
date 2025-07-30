@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (input) {
     input.addEventListener('keydown', function (event) {
       if (event.key === 'Enter') {
-        fetchData();
+        // fetchData();
         event.preventDefault();
         fetchShoppingData(input.value);
       }
@@ -82,11 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Your search function
-// function fetchShoppingData(query) {
-//   console.log("Searching for:", query);
-//   // TODO: Add actual fetch or filter logic
-// }
 
 
 var coll = document.getElementsByClassName("collapsible");
@@ -103,19 +98,15 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-async function fetchData() {
-  const spinner = document.getElementById('spinner');
-  spinner.style.display = 'block'; // Show spinner
 
-  try {
-    const response = await fetch('https://your-api-endpoint.com/data');
-    const data = await response.json();
+document.getElementById('phone_bar').addEventListener('click', () => {
+    document.getElementById('navbar').classList.toggle('show');
+  });
 
-    // Process the data here
-    console.log(data);
-  } catch (error) {
-    console.error('Error fetching data:', error);
-  } finally {
-    spinner.style.display = 'none'; // Hide spinner
-  }
-}
+
+  //    const phoneBar = document.getElementById('phone_bar');
+  // const navbar = document.getElementById('navbar');
+
+  // phoneBar.addEventListener('click', () => {
+  //   navbar.classList.toggle('active');
+  // });
