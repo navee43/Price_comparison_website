@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - PriceCompare</title>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      /* font-family: 'Nunito', sans-serif; */
+      background-color: #fefde9;
+      color: #1a1a1a;
+      line-height: 1.8;
+      padding-top: 80px;
+    }
+
+    /* Header Navigation */
+    #head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 20px;
+      background: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .header_text {
+      font-size: 25px;
+      background: rgb(255,190,200);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .navbar {
+      display: flex;
+    }
+
+    .nav-li {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+
+    .nav-li a {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 400px;
+      color: black;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .nav-li a:hover {
+      color: pink;
+    }
+
+    .nav-li a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(45deg, pink, white);
+      transition: width 0.3s ease;
+    }
+
+    .nav-li a:hover::after {
+      width: 100%;
+    }
+
+    #phone_bar {
+      display: none;
+      color: black;
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    /* About Content */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 3rem 10%;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 2rem;
+      color: #555;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-top: 1rem;
+    }
+
+    .highlight {
+      color: #b6ad56;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 4rem;
+      font-size: 0.95rem;
+      color: #888;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      body {
+        padding-top: 70px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .nav-li {
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        display: none;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+
+      .nav-li.show {
+        display: flex;
+      }
+
+      #phone_bar {
+        display: block;
+      }
+
+      .navbar {
+        position: relative;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="head">
+    <h1 class="header_text">Quick Compare</h1>
+    <i class="fas fa-bars" id="phone_bar" onclick="toggleMenu()"></i>
+    <nav class="navbar" id="navbar">
+      <ul class="nav-li" id="nav-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#" onclick="focusSearchBar()">Compare</a></li>
+        <li><a href="./AboutUs.html">About</a></li>
+        <li><a href="./contactUs.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>About Us</h1>
+    <p><span class="highlight">PriceCompare</span> is a powerful online tool designed to help you make smarter buying decisions. Whether you're shopping for electronics, fashion, home essentials, or beauty products — we compare prices across top e-commerce platforms like Amazon, Flipkart, Myntra, and others — all in one place.</p>
+
+    <h2>Why We Exist</h2>
+    <p>Online shopping can be overwhelming. With thousands of options and fluctuating prices, finding the best deal can be time-consuming and frustrating. <strong>PriceCompare</strong> solves this problem by giving you a clean, side-by-side view of product prices across multiple platforms instantly.</p>
+
+    <h2>How It Works</h2>
+    <p>Our system automatically fetches real-time pricing data from top online retailers using smart algorithms and APIs. You simply search for a product, and we handle the rest — from matching exact models to displaying discounts and links to buy.</p>
+
+    <h2>Created by Naveen</h2>
+    <p><span class="highlight">Naveen</span>, a passionate developer and tech enthusiast, created this platform to make shopping transparent and efficient for everyone. His mission is to help consumers save both time and money with a fast, intelligent comparison tool.</p>
+
+    <h2>Why Use PriceCompare?</h2>
+    <ul style="text-align: left; max-width: 700px; margin: 0 auto; margin-top: 1rem; font-size: 1rem;">
+      <li>✔ Save money by spotting the lowest price instantly</li>
+      <li>✔ Avoid price manipulation tricks on individual platforms</li>
+      <li>✔ Get direct links to trusted retailers</li>
+      <li>✔ Mobile and desktop friendly</li>
+      <li>✔ 100% free and secure</li>
+    </ul>
+
+    <p class="footer">Thank you for visiting PriceCompare — helping you shop smarter every day.</p>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const navList = document.getElementById('nav-list');
+      navList.classList.toggle('show');
+    }
+
+    function focusSearchBar() {
+      alert("Search bar focus triggered! Add your logic.");
+    }
+  </script>
+
+</body>
+</html>
